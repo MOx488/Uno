@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="1004.0" style="-fx-background-color: #0A100D;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane>
+         <children>
+            <Label fx:id="bot1" layoutX="136.0" layoutY="146.0" prefHeight="22.0" prefWidth="110.0" textFill="#f1d302">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="bot2" layoutX="440.0" layoutY="146.0" prefHeight="22.0" prefWidth="103.0" textFill="#f1d302">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="bot3" layoutX="720.0" layoutY="146.0" prefHeight="22.0" prefWidth="103.0" textFill="#f1d302">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="botBox1" layoutX="158.0" layoutY="31.0" prefHeight="86.0" prefWidth="60.0" />
+            <AnchorPane fx:id="botBox2" layoutX="449.0" layoutY="31.0" />
+            <AnchorPane fx:id="botBox3" layoutX="736.0" layoutY="31.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="208.0" prefWidth="1002.0">
+         <children>
+            <VBox fx:id="deck" layoutX="615.0" layoutY="41.0">
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/faceddown.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox fx:id="topCard" layoutX="409.0" layoutY="41.0">
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/blue8.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Button fx:id="blueButton" layoutX="32.0" layoutY="58.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="60.0" style="-fx-background-color: #4392F1;" />
+            <Button fx:id="redButton" layoutX="123.0" layoutY="58.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="60.0" style="-fx-background-color: red;" />
+            <Button fx:id="yellowButton" layoutX="32.0" layoutY="125.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="60.0" style="-fx-background-color: yellow;" />
+            <Button fx:id="greenButton" layoutX="123.0" layoutY="125.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="60.0" style="-fx-background-color: #09BC8A;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="246.0" prefWidth="1004.0">
+         <children>
+            <ScrollPane fx:id="playerBox" layoutX="77.0" layoutY="64.0" prefHeight="175.0" prefWidth="830.0" style="-fx-background-color: black;">
+               <content>
+                  <HBox fx:id="cardBox" style="-fx-background-color: black;">
+                     <children>
+                        <ImageView fitHeight="168.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/yellow8.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="168.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/reddraw2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="168.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/green4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="168.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/red1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="168.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/blackwild.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="168.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/green0.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <Label fx:id="playerName" layoutX="295.0" layoutY="3.0" prefHeight="22.0" prefWidth="397.0" text="yourName" textFill="#f1d302">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="currantPlayer" layoutX="14.0" layoutY="6.0" prefHeight="26.0" prefWidth="176.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

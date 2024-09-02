@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="1004.0" style="-fx-background-color: #0A100D;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="140.0" prefWidth="375.0" text="Game Over " textFill="#c1292e">
+         <font>
+            <Font name="System Bold" size="61.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="320.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="result" prefHeight="178.0" prefWidth="711.0" text="You Won !" textFill="#f1d302">
+         <font>
+            <Font name="System Bold" size="65.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="230.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="setupButton" mnemonicParsing="false" prefHeight="70.0" prefWidth="234.0" style="-fx-background-color: #F1D302;" text="Back to Setup">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="380.0" top="40.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
